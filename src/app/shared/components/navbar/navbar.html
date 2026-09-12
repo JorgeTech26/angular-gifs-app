@@ -1,0 +1,30 @@
+<div class="max-w-7xl mx-auto relative">
+  <section class="flex flex-row justify-between items-center py-2.5">
+    <a class="flex flex-row justify-center items-center gap-x-2">
+      <img src="/images/logo.png" class="h-10" alt="imagen logo" />
+      <h1 class="text-white text-2xl font-extrabold">
+        Buscador de <span class="text-amber-500">GIF</span>s<span class="text-amber-500">.</span>
+      </h1>
+    </a>
+
+    <!-- Navegación pantalla mediana -->
+    <nav class="hidden sm:flex sm:flex-row sm:justify-center sm:items-center sm:gap-x-4">
+      <a class="text-white font-semibold px-4 py-1.5 rounded-md bg-white/10 hover:bg-white/20 transition-colors duration-300 cursor-pointer">Inicio</a>
+      <a class="text-white font-semibold px-4 py-1.5 rounded-md border border-gray-500 hover:border-gray-300 transition-colors duration-300 cursor-pointer">Buscar</a>
+    </nav>
+
+    <!-- Navegación pantalla chica -->
+    <button class="sm:hidden border border-gray-500 hover:border-gray-300 transition-colors duration-300 p-1 rounded-sm cursor-pointer">
+      <svg class="h-7 w-7 text-white">
+        <use href="/images/icons.svg#menu"></use>
+      </svg>
+    </button>
+
+    <section class="sm:hidden absolute bg-gray-900 top-16 right-0 left-0 p-4 rounded-md">
+      <nav class="flex flex-col space-y-3">
+        <a class="text-white font-semibold px-2 py-1.5 rounded-md bg-white/10 hover:bg-white/20 transition-colors duration-300 cursor-pointer">Inicio</a>
+        <a class="text-white font-semibold px-2 py-1.5 rounded-md border border-gray-500 hover:border-gray-300 transition-colors duration-300 cursor-pointer">Buscar</a>
+      </nav>
+    </section>
+  </section>
+</div>
