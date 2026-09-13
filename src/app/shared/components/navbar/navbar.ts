@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './navbar.html',
 })
-export class Navbar {}
+export class Navbar {
+  abrirMenu = false;
+}
