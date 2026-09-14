@@ -1,0 +1,14 @@
+<button
+  (click)="abrirMenu.update((valor) => !valor)"
+  class="border border-gray-500 hover:border-gray-300 transition-colors duration-300 p-1 rounded-sm cursor-pointer"
+>
+  <svg class="h-7 w-7 text-white">
+    <use href="/images/icons.svg#menu"></use>
+  </svg>
+</button>
+
+@if (abrirMenu()) {
+  <section class="sm:hidden absolute bg-gray-900 top-16 right-0 left-0 p-4 rounded-md">
+    <app-navbar-item />
+  </section>
+}
